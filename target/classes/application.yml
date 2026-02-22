@@ -1,0 +1,16 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/saraladb?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+    username: root
+    password: tiger
+  jpa:
+    hibernate:
+      ddl-auto: none   # table already exists
+    open-in-view: false
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
